@@ -19,7 +19,7 @@ API do Projeto Youtube Clone desenvolvido no curso Profissão Programador (Full-
 </p>
 
 <p align="center">
-  Uma interface clone do youtube com algumas funcionalidades inseridas simulando o site principal. Apresenta seção inicial com opção de login, mostra de vídeos e shorts que podem ser filtrados por categoria, canal do usuário onde podem ser inseridos cards com as informações sobre os vídeos.
+  Uma interface parecida com o YouTube, criada como um "clone", com algumas funções que imitam o site original. A página inicial tem a opção de login e mostra cards com vídeos e shorts, que podem ser filtrados por categoria. Há também uma área do canal do usuário, onde é possível adicionar cards com informações dos vídeos. Cada card mostra apenas a imagem, o título, a descrição, a data de publicação e o número de visualizações. 
 </p>
 
 <p>
@@ -58,7 +58,7 @@ Para utilizar a api você precisará ter instalado em sua máquina:
 2.Navege para a pasta do projeto:
 
 ```
-❯ cd apiYoutubeClone
+❯ cd api_youtube_project
 ```
 
 2.Instale as dependências do projeto:
@@ -156,10 +156,10 @@ As seguintes rotas estão disponíveis:
 {headers: {Authorization: token}}
 
 {
-    "user_id": "4ca19391-3061-4101-a9e4-e290f4fac028",
-    "image": "https://www.recantodossonhos.com.br/wp-content/uploads/2019/03/face.png",
-    "title": "Viagem a Campos do Jordão",
-    "description": "Curtindo viagem de casal nesse lugar maravilhoso, com um clima bem frio",
+    "user_id": "user_id",
+    "image": "https://www.endereco.com/imagem.png",
+    "title": "Título Vídeo",
+    "description": "Descrição do vídeo aqui",
     "channel": "G",
     "views": "115",
     "upload_date": "2025-06-19"
