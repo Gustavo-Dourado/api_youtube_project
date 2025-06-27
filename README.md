@@ -17,7 +17,7 @@ API do Projeto Youtube Clone desenvolvido no curso Profissão Programador (Full-
 <p align="center">
     Api para projeto do youtube clone desenvolvido no curso full-stack <b>Profissão Programador</b>, com o professor Paulo Borges.
 
-    Uma interface "clone" do youtube com algumas funcionalidades inseridas simulando o site principal. Apresenta seção inicial com opção de login, mostra de vídeos e shorts que podem ser filtrados por categoria, canal do usuário onde podem ser inseridos cards com as informações sobre os vídeos.
+    Uma interface clone do youtube com algumas funcionalidades inseridas simulando o site principal. Apresenta seção inicial com opção de login, mostra de vídeos e shorts que podem ser filtrados por categoria, canal do usuário onde podem ser inseridos cards com as informações sobre os vídeos.
 
     Há consumo de 2 api's neste projeto:
     1. Api própria que contém as rotas para criação e login de usuários, bem como rotas para criação de vídeos dos usuários.
@@ -25,26 +25,26 @@ API do Projeto Youtube Clone desenvolvido no curso Profissão Programador (Full-
 
 </p>
 
-## :laptop: Tecnologias 
+## :laptop: #Tecnologias 
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - MariaDB
 - Typescript
 
-## :books: Bibliotecas
+## :books: #Bibliotecas
 Principais Bibliotecas utilizadas:
 - Express
 - Jsonwebtoken, uuid
 - Styled components
 
-## :wrench: Pré-Requisitos
+## :wrench: #Pré-Requisitos
 Para utilizar a api você precisará ter instalado em sua máquina:
 - NodeJs
 - MariaDb
 - MySql Workbench (opcional)  ou MySql Cli *Para criar o banco de dados e para visualizar as tabelas de usuários e vídeos*
 
-## :clipboard: Instruções
+## :clipboard: #Instruções
 1. Clone o repositório:
 
 ```
@@ -105,7 +105,7 @@ YOUTUBE_API_KEY=XXxxXxxxxx_x999XX99XXXXXx9xxxXXXx9xxXx
 ```
 ❯ npm run start
 ```
-## API Usage
+## #API Usage
 
 As seguintes rotas estão disponíveis:
 
@@ -126,31 +126,30 @@ As seguintes rotas estão disponíveis:
 }
 ```
 
-3. `GET api/user/get-user` - Buscar informações do usuário para apresentar resultados nas páginas home, userChannel, etc.
+3. `GET api/user/get-user` - Buscar informações do usuário 
+*Informações para apresentar resultados nas páginas home, userChannel, etc.*
 *É necessário passer token (string) de acesso nesta rota no header da requisição* 
 ```
-{
-    headers: {Authorization: token}
-}
+{headers: {Authorization: token}}
 ```
 
-4. `GET api/videos/search-category?categoryId=0` - Pesquisar vídeos na api do Youtube por CATEGORIA *(Categoria determinada por número e passada por query params)*
+4. `GET api/videos/search-category?categoryId=0` - Pesquisar vídeos na api do Youtube por CATEGORIA 
+*(Categoria determinada por número e passada por query params)*
 
-5. `GET api/videos/search?searchContent="nome"` - Pesquisar vídeos na api do Youtube por NOME *(pesquisa passada por query params)*
+5. `GET api/videos/search?searchContent="nome"` - Pesquisar vídeos na api do Youtube por NOME 
+*(Pesquisa passada por query params)*
 
-6. `GET api/videos/get-videos?user_id=user_id` - Buscar vídeos do usuário *(user_id passado por query params)*
+6. `GET api/videos/get-videos?user_id=user_id` - Buscar vídeos do usuário 
+*(user_id passado por query params)*
+
 *É necessário passer token (string) de acesso nesta rota no header da requisição* 
 ```
-{
-    headers: {Authorization: token}
-}
+{headers: {Authorization: token}}
 ```
 
 7. `POST api/videos/create-video` - Login de usuário
 ```
-{
-    headers: {Authorization: token}
-}
+{headers: {Authorization: token}}
 
 {
     "user_id": "4ca19391-3061-4101-a9e4-e290f4fac028",
