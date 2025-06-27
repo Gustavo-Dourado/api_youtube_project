@@ -6,10 +6,10 @@ API do Projeto Youtube Clone desenvolvido no curso Profissão Programador (Full-
 
 <p align="center">
   <a href="#laptop-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-bibliotecas">Bibliotecas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#pré-requisitos">Pré-Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-instruções">Instruções</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-api-usage">API Usage</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#books-bibliotecas">Bibliotecas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#wrench-pré-Requisitos">Pré-Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#clipboard-instruções">Instruções</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#api-usage">API Usage</a>
 </p>
 
 <br>
@@ -32,19 +32,19 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - MariaDB
 - Typescript
 
-## :books: #Bibliotecas
+## :books: Bibliotecas
 Principais Bibliotecas utilizadas:
 - Express
 - Jsonwebtoken, uuid
 - Styled components
 
-## :wrench: #Pré-Requisitos
+## :wrench: Pré-Requisitos
 Para utilizar a api você precisará ter instalado em sua máquina:
 - NodeJs
 - MariaDb
 - MySql Workbench (opcional)  ou MySql Cli *Para criar o banco de dados e para visualizar as tabelas de usuários e vídeos*
 
-## :clipboard: #Instruções
+## :clipboard: Instruções
 1. Clone o repositório:
 
 ```
@@ -105,7 +105,7 @@ YOUTUBE_API_KEY=XXxxXxxxxx_x999XX99XXXXXx9xxxXXXx9xxXx
 ```
 ❯ npm run start
 ```
-## #API Usage
+## API Usage
 
 As seguintes rotas estão disponíveis:
 
