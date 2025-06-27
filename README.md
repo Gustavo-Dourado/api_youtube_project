@@ -51,13 +51,14 @@ Para utilizar a api você precisará ter instalado em sua máquina:
 1. Clone o repositório:
 
 ```
-❯ git clone https://github.com/gustavo-dourado/
+❯ git clone https://github.com/Gustavo-Dourado/api_youtube_project
+
 ```
 
 2.Navege para a pasta do projeto:
 
 ```
-❯ cd youtubeClone
+❯ cd apiYoutubeClone
 ```
 
 2.Instale as dependências do projeto:
@@ -70,7 +71,7 @@ Para utilizar a api você precisará ter instalado em sua máquina:
 
 - Prévia das instruções para criação da API Key do youtube:
 <p align="center">
-  <img alt="youtube api key instructions" src=".github/preview-api-key-instructions.png" width="100%">
+  <img alt="youtube api key instructions" src=".github/api-key-instructions.png" width="100%">
 </p>
 
 
