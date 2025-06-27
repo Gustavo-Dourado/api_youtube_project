@@ -16,13 +16,16 @@ API do Projeto Youtube Clone desenvolvido no curso Profissão Programador (Full-
 
 <p align="center">
     Api para projeto do youtube clone desenvolvido no curso full-stack <b>Profissão Programador</b>, com o professor Paulo Borges.
+</p>
 
-    Uma interface clone do youtube com algumas funcionalidades inseridas simulando o site principal. Apresenta seção inicial com opção de login, mostra de vídeos e shorts que podem ser filtrados por categoria, canal do usuário onde podem ser inseridos cards com as informações sobre os vídeos.
+<p align="center">
+  Uma interface clone do youtube com algumas funcionalidades inseridas simulando o site principal. Apresenta seção inicial com opção de login, mostra de vídeos e shorts que podem ser filtrados por categoria, canal do usuário onde podem ser inseridos cards com as informações sobre os vídeos.
+</p>
 
+<p align="center">
     Há consumo de 2 api's neste projeto:
     1. Api própria que contém as rotas para criação e login de usuários, bem como rotas para criação de vídeos dos usuários.
     2. Api do youtube consumida dentro de rotas da primeira api, para pesquisa de vídeos por categoria ou por pesquisa de palavras, é necessário uma chave para acesso dessa api do youtube.
-
 </p>
 
 ## :laptop: Tecnologias 
