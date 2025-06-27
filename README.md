@@ -5,7 +5,7 @@ API do Projeto Youtube Clone desenvolvido no curso Profissão Programador (Full-
 </p>
 
 <p align="center">
-  <a href="#laptop-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#desktop_computer-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#books-bibliotecas">Bibliotecas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#wrench-pré-Requisitos">Pré-Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#clipboard-instruções">Instruções</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -23,12 +23,12 @@ API do Projeto Youtube Clone desenvolvido no curso Profissão Programador (Full-
 </p>
 
 <p>
-  Há consumo de 2 api's neste projeto: </br>
-    1. Api própria que contém as rotas para criação e login de usuários, bem como rotas para criação de vídeos dos usuários. </br>
+  Há consumo de 2 api's neste projeto:   </br>  
+    1. Api própria que contém as rotas para criação e login de usuários, bem como rotas para criação de vídeos dos usuários.   </br>
     2. Api do youtube consumida dentro de rotas da primeira api, para pesquisa de vídeos por categoria ou por pesquisa de palavras, é necessário uma chave para acesso dessa api do youtube.
 </p>
 
-## :laptop: Tecnologias 
+## :desktop_computer: Tecnologias 
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -45,14 +45,14 @@ Principais Bibliotecas utilizadas:
 Para utilizar a api você precisará ter instalado em sua máquina:
 - NodeJs
 - MariaDb
-- MySql Workbench (opcional)  ou MySql Cli *Para criar o banco de dados e para visualizar as tabelas de usuários e vídeos*
+- MySql Workbench (opcional) </br>
+  *Para criar o banco de dados e para visualizar as tabelas de usuários e vídeos*
 
 ## :clipboard: Instruções
 1. Clone o repositório:
 
 ```
 ❯ git clone https://github.com/Gustavo-Dourado/api_youtube_project
-
 ```
 
 2.Navege para a pasta do projeto:
@@ -67,18 +67,18 @@ Para utilizar a api você precisará ter instalado em sua máquina:
 ❯ npm install
 ```
 
-3. Gerar API Key do youtube conforme instruções do site: [Google](https://developers.google.com/youtube/v3/getting-started?hl=pt-br)
+3. Gerar API Key do youtube conforme instruções do site: [Google](https://developers.google.com/youtube/v3/getting-started?hl=pt-br) </br>
 
 - Prévia das instruções para criação da API Key do youtube:
 <p>
-  <img alt="youtube api key instructions" src=".github/api-key-instructions.png" width="40%">
+  <img alt="youtube api key instructions" src=".github/api-key-instructions.png" width="60%">
 </p>
 
 
 4. Criação do banco de dados no mariaDb
 
-5.Configurar o arquivo .env :
-*Configurar .env conforme arquivo env.example*
+5.Configurar o arquivo .env </br>
+*Configurar .env conforme arquivo env.example:*
 ```
 SECRET=secret
 
@@ -104,7 +104,7 @@ YOUTUBE_API_KEY=XXxxXxxxxx_x999XX99XXXXXx9xxxXXXx9xxXx
 ❯ npm run db:init
 ```
 
-8. Rodar servidor:
+8. Iniciar servidor:
 
 ```
 ❯ npm run start
@@ -130,28 +130,28 @@ As seguintes rotas estão disponíveis:
 }
 ```
 
-3. `GET api/user/get-user` - Buscar informações do usuário 
-*Informações para apresentar resultados nas páginas home, userChannel, etc.*
+3. `GET api/user/get-user` - Buscar informações do usuário </br>
+*Informações para apresentar resultados nas páginas home, userChannel, etc.* </br>
 *É necessário passer token (string) de acesso nesta rota no header da requisição* 
 ```
 {headers: {Authorization: token}}
 ```
 
-4. `GET api/videos/search-category?categoryId=0` - Pesquisar vídeos na api do Youtube por CATEGORIA 
+4. `GET api/videos/search-category?categoryId=0` - Pesquisar vídeos na api do Youtube por CATEGORIA </br>
 *(Categoria determinada por número e passada por query params)*
 
-5. `GET api/videos/search?searchContent="nome"` - Pesquisar vídeos na api do Youtube por NOME 
+5. `GET api/videos/search?searchContent="nome"` - Pesquisar vídeos na api do Youtube por NOME </br>
 *(Pesquisa passada por query params)*
 
-6. `GET api/videos/get-videos?user_id=user_id` - Buscar vídeos do usuário 
-*(user_id passado por query params)*
+6. `GET api/videos/get-videos?user_id=user_id` - Buscar vídeos do usuário </br>
+*(user_id passado por query params)* </br>
 
 *É necessário passer token (string) de acesso nesta rota no header da requisição* 
 ```
 {headers: {Authorization: token}}
 ```
 
-7. `POST api/videos/create-video` - Login de usuário
+7. `POST api/videos/create-video` - Criar vídeo de usuário
 ```
 {headers: {Authorization: token}}
 
@@ -165,9 +165,4 @@ As seguintes rotas estão disponíveis:
     "upload_date": "2025-06-19"
 }
 ```
-
-
-
-
-
 ---
