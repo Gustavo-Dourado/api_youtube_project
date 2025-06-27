@@ -77,8 +77,8 @@ Para utilizar a api você precisará ter instalado em sua máquina:
 
 4. Criação do banco de dados no mariaDb
 
-5.Configurar o arquivo .env </br>
-*Configurar .env conforme arquivo env.example:*
+5. Criar e configurar o arquivo .env </br>
+*Configurar .env com base na criação do banco de dados, conforme arquivo env.example:*
 ```
 SECRET=secret
 
@@ -151,7 +151,7 @@ As seguintes rotas estão disponíveis:
 {headers: {Authorization: token}}
 ```
 
-7. `POST api/videos/create-video` - Criar vídeo de usuário
+7. `POST api/videos/create-video` - Criar card de vídeo do usuário
 ```
 {headers: {Authorization: token}}
 
