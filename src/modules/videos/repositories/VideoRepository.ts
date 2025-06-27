@@ -43,7 +43,7 @@ class VideoRepository {
         const API_KEY = process.env.YOUTUBE_API_KEY
         const {searchContent} = request.query
     
-        const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&order=viewCount&q=${searchContent}&type=video&key=${API_KEY}`
+        const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&order=viewCount&chart=mostPopular&regionCode=BR&q=${searchContent}&type=video&key=${API_KEY}`
         
         try{
             const results = await fetch(url)
@@ -60,7 +60,7 @@ class VideoRepository {
         const API_KEY = process.env.YOUTUBE_API_KEY
         const {categoryId} = request.query
 
-        const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&order=viewCount&q=${categoryId}&type=video&key=${API_KEY}`
+        const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&order=viewCount&chart=mostPopular&regionCode=BR&q=${categoryId}&type=video&key=${API_KEY}`
         try{
             const results = await fetch(url)
             const resultsJson = await results.json()
